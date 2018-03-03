@@ -9,10 +9,8 @@ Steps!
 '''
 import turtle
 
-def draw_square():
-	window = turtle.Screen()
-	window.bgcolor("red")
 
+def draw_square():
 	pencil = turtle.Turtle()
 	# Costumizing section!
 	pencil.shape("turtle")
@@ -23,11 +21,15 @@ def draw_square():
 		pencil.forward(100)
 		pencil.right(90)
 
+def draw_circle():
 	pen = turtle.Turtle()
+	# Costumizing section!
 	pen.shape("arrow")
 	pen.color("green")
 	pen.circle(100)
 
-	window.exitonclick()
-
+window = turtle.Screen()
+window.bgcolor("red")
 draw_square()
+draw_circle()
+window.exitonclick()
