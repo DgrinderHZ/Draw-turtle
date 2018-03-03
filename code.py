@@ -28,6 +28,11 @@ def draw_square():
 	pencil.forward(100)
 	pencil.right(90)
 
+	pen = turtle.Turtle()
+	pen.shape("arrow")
+	pen.color("green")
+	pen.circle(100)
+
 	window.exitonclick()
 
 draw_square()
