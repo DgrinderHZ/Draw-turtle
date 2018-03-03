@@ -19,14 +19,9 @@ def draw_square():
 	pencil.color("yellow")
 	pencil.speed(10)
 
-	pencil.forward(100)
-	pencil.right(90)
-	pencil.forward(100)
-	pencil.right(90)
-	pencil.forward(100)
-	pencil.right(90)
-	pencil.forward(100)
-	pencil.right(90)
+	for x in range(0,4):
+		pencil.forward(100)
+		pencil.right(90)
 
 	pen = turtle.Turtle()
 	pen.shape("arrow")
