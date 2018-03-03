@@ -14,6 +14,11 @@ def draw_square():
 	window.bgcolor("red")
 
 	pencil = turtle.Turtle()
+	# Costumizing section!
+	pencil.shape("turtle")
+	pencil.color("yellow")
+	pencil.speed(10)
+
 	pencil.forward(100)
 	pencil.right(90)
 	pencil.forward(100)
