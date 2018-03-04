@@ -39,5 +39,6 @@ for x in  range(0,3):
 	    donatilo.right(180)
 	    donatilo.left(120)
 	donatilo.left(120)
+	donatilo.forward(200)
 
 window.exitonclick()
