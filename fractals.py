@@ -30,17 +30,22 @@ def draw(color, size):
 
 
 color = "green"
-size = 20
+size = 100
 for x in  range(0,3):
 	for i in range(0,3):
 	    draw(color, size)
 	    donatilo.left(60)
 	    donatilo.forward(size/2)
-	    donatilo.right(180)
-	    donatilo.left(120)
-	donatilo.forward(size)
-	donatilo.left(120)
-	donatilo.forward(-size)
-	donatilo.left(120)
+	    donatilo.right(60)
+	if x < 1:
+		donatilo.right(60)
+		donatilo.forward(size)
+		donatilo.right(60)
+		donatilo.forward(size)
+		donatilo.right(120)
+	else:
+		donatilo.right(120)
+		donatilo.forward(-size)
+
 
 window.exitonclick()
