@@ -22,7 +22,7 @@ def draw(color, size):
 	draw_triangle(color, size)
 	donatilo.fill(False)
 
-	donatilo.forward(100)
+	donatilo.forward(size/2)
 	donatilo.right(60)
 	donatilo.fill(True)
 	draw_triangle("white", size/2)
@@ -30,15 +30,17 @@ def draw(color, size):
 
 
 color = "green"
-size = 200
+size = 20
 for x in  range(0,3):
 	for i in range(0,3):
 	    draw(color, size)
 	    donatilo.left(60)
-	    donatilo.forward(100)
+	    donatilo.forward(size/2)
 	    donatilo.right(180)
 	    donatilo.left(120)
+	donatilo.forward(size)
 	donatilo.left(120)
-	donatilo.forward(200)
+	donatilo.forward(-size)
+	donatilo.left(120)
 
 window.exitonclick()
