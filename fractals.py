@@ -31,11 +31,13 @@ def draw(color, size):
 
 color = "green"
 size = 200
-for i in range(0,3):
-	draw(color, size)
-	donatilo.left(60)
-	donatilo.forward(100)
-	donatilo.right(180)
+for x in  range(0,3):
+	for i in range(0,3):
+	    draw(color, size)
+	    donatilo.left(60)
+	    donatilo.forward(100)
+	    donatilo.right(180)
+	    donatilo.left(120)
 	donatilo.left(120)
 
 window.exitonclick()
